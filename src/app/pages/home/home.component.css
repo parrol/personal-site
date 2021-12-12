@@ -1,0 +1,24 @@
+main {
+  height: 100vh;
+}
+
+.main-section__container {
+  display: grid;
+  place-items: center;
+}
+
+.main-section {
+  max-width: 600px;
+  margin: 20px;
+}
+
+p {
+  color: var(--text-color);
+  font-size: clamp(1rem, 10vw, 2rem);
+  text-align: end;
+}
+
+span {
+  font-size: clamp(1.5rem, 12vw, 4.4rem);
+  color: var(--accent-color);
+}

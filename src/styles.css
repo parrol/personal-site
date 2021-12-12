@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  font-family: "Readex Pro", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+
+  --bg-color: #311D3F;
+  --text-color: white;
+  --accent-color: #E23E57;
+
+  background-color: var(--bg-color);
+
+}
+
