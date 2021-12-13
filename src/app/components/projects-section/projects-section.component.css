@@ -1,0 +1,19 @@
+.section-container {
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 6vw, 4rem);
+  background-color: var(--bg2-color);
+
+  min-height: 800px;
+}
+
+.projects-container {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+

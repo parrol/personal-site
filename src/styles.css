@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   font-family: "Readex Pro", sans-serif;
-  font-family: "Open Sans", sans-serif;
   font-family: "Roboto Mono", monospace;
 
   --bg-color: #311d3f;
+  --bg2-color: #522546;
   --text-color: white;
   --accent-color: #e23e57;
 
@@ -52,6 +52,9 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
