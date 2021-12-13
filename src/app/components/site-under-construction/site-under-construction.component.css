@@ -32,11 +32,28 @@ span {
   text-align: center;
 }
 
-.arrow-circle-down {
+
+/* arrow */
+.arrow-down-circle {
+  aspect-ratio: 1;
+  width: 40px;
+  fill: none;
+  stroke: var(--accent-color);
   font-size: initial;
   filter: drop-shadow(4px, 4px, 4px, rgb(0, 0, 0, 0.5));
+  animation: float 1700ms infinite;
 }
 
-.arrow-circle-down:hover {
-  /* transform: escale(1.5); */
+@keyframes float {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }

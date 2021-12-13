@@ -20,6 +20,7 @@
 .project-card-container:hover,
 .project-card-container:focus {
   transform: scale(1.075);
+  cursor: pointer;
 }
 
 /* card title */
@@ -54,15 +55,18 @@
   justify-content: space-between;
 }
 
+.github-logo-container {
+  transition: transform 200ms;
+}
+.github-logo-container:focus,
+.github-logo-container:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .github-logo {
   aspect-ratio: 1;
   width: 40px;
   fill: var(--accent-color);
-}
-
-.github-logo:hover,
-.github-logo:focus {
-  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* link - button */
@@ -78,13 +82,16 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   transition: outline-color 300ms;
   outline-color: transparent;
+  transition: transform 200ms;
 }
 
 .see-live:hover,
 .see-live:focus {
+  transform: scale(1.05);
   outline-color: wheat;
   outline: solid 1px;
 }
+
 .button-disabled {
   pointer-events: none;
   background-color: rgba(226, 62, 87, 50%);
