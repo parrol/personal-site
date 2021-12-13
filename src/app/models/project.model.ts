@@ -4,4 +4,5 @@ export class ProjectModel {
     techUsed!: string;
     liveLink?: string;
     repoLink?: string;
+    status!: string;
 }

@@ -1,5 +1,8 @@
 <div class="project-card-container" role="article">
   <p class="title">{{ project.title }}</p>
+  <p class="status status-{{ project.status | lowercase }}">
+    {{ project.status }}
+  </p>
   <br />
   <p class="description">
     {{ project.description }}

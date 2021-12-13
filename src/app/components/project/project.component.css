@@ -1,7 +1,12 @@
+p {
+  margin: 0.5rem 0;
+}
+
 .project-card-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1rem, 15vw, 1.1rem);
@@ -49,10 +54,34 @@
   transform-origin: left;
 }
 
+.status {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  font-size: small;
+  font-weight: 600;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.status-finished {
+  background-color: var(--status-finished-color);
+}
+
+.status-demo {
+  background-color: var(--status-demo-color);
+}
+
+.status-ongoing {
+  background-color: var(--status-ongoing-color);
+}
+
 /* bottom */
 .bottom-card-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .github-logo-container {
@@ -110,5 +139,12 @@
 
   .github-logo {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .status {
+    top: 1rem;
+    right: 1rem;
   }
 }

@@ -8,6 +8,10 @@
   --text-color: white;
   --accent-color: #e23e57;
 
+  --status-finished-color: #5AA469;
+  --status-demo-color: #F1935C;
+  --status-ongoing-color: #34626C;
+
   background-color: var(--bg-color);
 }
 
