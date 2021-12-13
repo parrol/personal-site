@@ -99,12 +99,12 @@ p {
 }
 
 /* link - button */
-.see-live:link,
-.see-live:visited {
+.view-live:link,
+.view-live:visited {
   color: white;
 }
 
-.see-live {
+.view-live {
   background-color: var(--accent-color);
   padding: 0.5rem 2rem;
   border-radius: 10px;
@@ -114,8 +114,8 @@ p {
   transition: transform 200ms;
 }
 
-.see-live:hover,
-.see-live:focus {
+.view-live:hover,
+.view-live:focus {
   transform: scale(1.05);
   outline-color: wheat;
   outline: solid 1px;
