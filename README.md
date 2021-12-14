@@ -142,6 +142,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - [x] Add "Site Under Construction" notice.
 - [x] Add "Projects" section.
+- [x] Add Option to "leave a star".
 - [ ] Add logo.
 - [ ] Add "Contact me" section.
 - [ ] Add navbar.

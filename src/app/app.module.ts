@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { SiteUnderConstructionComponent } from './components/site-under-construction/site-under-construction.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
+import { StarCountComponent } from './components/star-count/star-count.component';
+import { NullStarsPipe } from './pipes/null-stars.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
     HomeComponent,
     SiteUnderConstructionComponent,
     ProjectComponent,
-    ProjectsSectionComponent
+    ProjectsSectionComponent,
+    StarCountComponent,
+    NullStarsPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

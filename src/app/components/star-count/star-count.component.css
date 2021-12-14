@@ -1,0 +1,117 @@
+.star-container {
+  color: white;
+  position: fixed;
+  bottom: 4rem;
+  right: 0;
+  padding: 1rem;
+  z-index: 2;
+  background-color: var(--bg-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  transition: transform 350ms;
+  outline: solid 2px;
+  box-shadow: 4px, 4px, 10px rgba(0, 0, 0, 1);
+}
+
+.star-count-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: -1rem;
+}
+
+.star {
+  aspect-ratio: 1;
+  width: 30px;
+  stroke: var(--star-color);
+}
+
+.star:hover,
+.star:focus {
+  cursor: pointer;
+}
+
+.fill {
+  fill: var(--star-color);
+}
+
+@media only screen and (max-width: 1400px) {
+  .star-container,
+  .star-paragraph {
+    transform: translateX(100px);
+  }
+
+  .star-count-container {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .star-container:hover,
+  .star-container:hover .star-paragraph {
+    transform: translateX(0);
+  }
+
+  .star-container:hover .star-count-container {
+    position: initial;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .star-container,
+  .star-paragraph {
+    transform: translateX(0px);
+  }
+
+  .star-count-container {
+    position: initial;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .star-container,
+  .star-paragraph {
+    transform: translateX(100px);
+  }
+
+  .star-count-container {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .star-container:hover,
+  .star-container:hover .star-paragraph {
+    transform: translateX(0);
+  }
+
+  .star-container:hover .star-count-container {
+    position: initial;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .star-container,
+  .star-paragraph {
+    transform: translateX(170px);
+  }
+
+  .star-count-container {
+    font-size: 0rem;
+  }
+
+  .star {
+    width: 30px;
+    transform: translate(-10px, 5px);
+  }
+
+  .star-container:hover .star-count-container {
+    font-size: 1.5rem;
+  }
+
+  .star-container:hover .star {
+    transform: translate(0px, 0px);
+  }
+}

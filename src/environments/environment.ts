@@ -1,9 +1,18 @@
+import { firebase } from "./firebaseConfig.env";
+import { initializeApp } from 'firebase/app';
+import { getDatabase } from "firebase/database";
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+/**
+ * firebase: contains the configuration of the firebase database linked to this app.
+ * db: reference to the firebase database
+ */
 export const environment = {
-  production: false
+  production: false,
+  firebase,
+  db : getDatabase(initializeApp(firebase))
 };
 
 /*
